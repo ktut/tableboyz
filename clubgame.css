@@ -36,13 +36,13 @@ p {
 
 button {
     font-family: 'Righteous', sans-serif !important;
-    background: greenyellow;
+    background: aquamarine;
     padding: 6px 7px 4px;
     cursor: pointer;
 }
 
 a {
-    color: greenyellow;
+    color: aquamarine;
 }
 
 
@@ -229,7 +229,7 @@ h2.char-select-header {
 }
 
 #end .endscore {
-    color: greenyellow;
+    color: aquamarine;
 }
 
 #time {
@@ -345,7 +345,7 @@ h2.char-select-header {
     position: relative !important;
     display: none;
     z-index: 500 !important;
-    bottom: 10%;
+    /* bottom: 10%; */
     left: 30%;
     width: 100px;
     height: 160px;
@@ -449,7 +449,7 @@ h2.char-select-header {
     bottom: 20px;
     width: 100%;
     display: block;
-    color: greenyellow;
+    color: aquamarine;
     letter-spacing: 6px;
     transform: translateY(-80px);
     line-height: 3;
@@ -457,7 +457,7 @@ h2.char-select-header {
 }
 
 .score {
-    color: greenyellow;
+    color: aquamarine;
 }
 
 
