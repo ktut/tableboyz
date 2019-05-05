@@ -36,13 +36,13 @@ p {
 
 button {
     font-family: 'Righteous', sans-serif !important;
-    background: aquamarine;
+    background: lime;
     padding: 6px 7px 4px;
     cursor: pointer;
 }
 
 a {
-    color: aquamarine;
+    color: lime;
 }
 
 
@@ -229,7 +229,7 @@ h2.char-select-header {
 }
 
 #end .endscore {
-    color: aquamarine;
+    color: lime;
 }
 
 #time {
@@ -449,7 +449,7 @@ h2.char-select-header {
     bottom: 20px;
     width: 100%;
     display: block;
-    color: aquamarine;
+    color: lime;
     letter-spacing: 6px;
     transform: translateY(-80px);
     line-height: 3;
@@ -457,7 +457,7 @@ h2.char-select-header {
 }
 
 .score {
-    color: aquamarine;
+    color: lime;
 }
 
 
