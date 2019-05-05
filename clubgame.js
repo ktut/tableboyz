@@ -5,11 +5,14 @@ $(document).ready(function() {
     let character = "";
 
     $(".char-select > div").on( "click", function() {
+        $(this).addClass("selected");
         $(this).siblings("div").fadeOut();
         $(".start-game").fadeIn();
-        $(".char-select > h2").hide();
+        $(".char-select-header").hide();
         if ( $( this ).hasClass( "adam" ) ) {
             character = "adam";
+        } else if ( $( this ).hasClass( "mills" ) ) {
+            character = "mills";
         } else {
             character = "ryan";
         }
@@ -56,6 +59,9 @@ $(document).ready(function() {
             .append($('<div class="person girl">'))
             .append($('<div class="person girl">'))
             .append($('<div class="person girl">'));
+        } else if (character === "mills") { 
+            $(".character .mills").show();
+            money = -1000;
         } else {
             $(".character .ryan").show();
             money += 1000;

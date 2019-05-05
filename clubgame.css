@@ -116,16 +116,32 @@ a {
     display: none;
 }
 
-.char-select {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.char-select h2 {
-    flex-basis: 100%;
+h2.char-select-header {
     text-align: center;
     margin-bottom: 15px;
+}
+
+.char-select {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.char-select > div {
+    flex-basis: 140px;
+    flex-shrink: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.char-select > div.selected {
+    margin: 0 auto;
+}
+
+.char-select div img {
+    width: 100%;
 }
 
 .char-select h3 {
@@ -136,17 +152,6 @@ a {
 .char-select p {
     text-align: center;
     margin-bottom: 25px;
-}
-
-.char-select div img {
-    width: 100%;
-}
-
-.char-select > div {
-    flex-basis: 36%;
-    padding-left: 10px;
-    padding-right: 10px;
-    cursor: pointer;
 }
 
 #title:not(.active),
@@ -295,7 +300,8 @@ a {
 }
 
 .character > .adam,
-.character > .ryan {
+.character > .ryan,
+.character > .mills  {
     display: none;
     position: relative !important;
     margin-top: -25px;
@@ -465,6 +471,9 @@ a {
 .sidetoside {
     animation: sidetoside 1.4s ease-in-out 1s infinite alternate both;
 }
+.bounce {
+    animation: bounce 1.2s ease-in-out 1s infinite alternate both;
+}
 .skew {
     animation: skew 6s ease-in-out 1s infinite alternate both;
 }
@@ -483,6 +492,11 @@ a {
 @keyframes sidetoside {
     0% { transform: rotateZ(-10deg); }
     100% { transform: rotateZ(10deg); }
+}
+
+@keyframes bounce {
+    0% { transform: translateY(-7px); }
+    100% { transform: translateY(7px); }
 }
 
 @keyframes skew {
