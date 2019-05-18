@@ -168,8 +168,6 @@ $(document).ready(function() {
                 speechBubbleText = "...or just buy one yourself";
             } else if (time === 45) {
                 speechBubbleText = "dudes make you lose points. no dudes";
-            } else if (time === 60) {
-                speechBubbleText = "...unless you want to click them to milk them for cash";
             } else if (time === 100 && !bottle && money >= 500) {
                 speechBubbleText = "I guess we should just buy a bottle already";
             } else if (time === 110) {

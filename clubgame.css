@@ -125,8 +125,8 @@ h2.char-select-header {
     display: flex;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .char-select > div {
