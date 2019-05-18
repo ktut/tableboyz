@@ -112,6 +112,21 @@ a {
     height: calc(100vh - 40px);
 }
 
+p.credit-touch {
+    display: none;
+}
+
+@media (hover: none) and (pointer: coarse) {
+
+    p.credit {
+        display: none;
+    }
+
+    p.credit-touch {
+        display: block;
+    }
+}
+
 .start-game {
     display: none;
 }
