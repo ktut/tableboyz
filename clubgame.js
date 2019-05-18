@@ -44,7 +44,7 @@ $(document).ready(function() {
         let numGirls = 0;
         let numGuys = 0;
         let score = 0;
-        let money = 1200;
+        let money = 0;
         let alcohol = 0;
         let roomWidth = parseFloat($(".room").width());
         let roomHeight = parseFloat($(".room").height());
@@ -61,7 +61,13 @@ $(document).ready(function() {
             .append($('<div class="person girl">'));
         } else if (character === "mills") { 
             $(".character .mills").show();
-            money = -1000;
+            $('#seat')
+            .append($('<div class="person guy">'))
+            .append($('<div class="person guy">'))
+            .append($('<div class="person guy">'))
+            .append($('<div class="person guy">'))
+            .append($('<div class="person guy">'));
+            money += 2000;
         } else {
             $(".character .ryan").show();
             money += 1000;

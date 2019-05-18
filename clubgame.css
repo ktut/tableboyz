@@ -125,10 +125,12 @@ h2.char-select-header {
     display: flex;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .char-select > div {
-    flex-basis: 140px;
+    flex-basis: 120px;
     flex-shrink: 0;
     padding-left: 10px;
     padding-right: 10px;
@@ -144,7 +146,7 @@ h2.char-select-header {
     width: 100%;
 }
 
-.char-select h3 {
+.char-select h2 {
     text-align: center;
     margin-bottom: 5px;
 }
