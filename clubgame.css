@@ -36,6 +36,7 @@ p {
 
 button {
     font-family: 'Righteous', sans-serif !important;
+    text-transform: uppercase;
     background: lime;
     padding: 6px 7px 4px;
     cursor: pointer;
@@ -414,7 +415,7 @@ h2.char-select-header {
     width: 100%;
 }
 
-.room .person {
+.room > .person {
     touch-action: none;
 }
 
@@ -481,6 +482,25 @@ h2.char-select-header {
 
 .score {
     color: lime;
+}
+
+.player-name,
+.player-scores {
+    max-width: 300px;
+    margin: 15px auto 0;
+}
+
+.player-name {
+    display: flex;
+}
+
+.player-name input {
+    padding: 5px 3px;
+    text-transform: uppercase;
+}
+
+.player-name input:focus {
+    outline: lime auto 5px;
 }
 
 

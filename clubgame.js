@@ -363,7 +363,7 @@ $(document).ready(function() {
 
         // extract money from dudes
         $("#seat .person.guy").on("click", function() {
-            console.log("clicked");
+            console.log("guy clicked for money");
             if (Math.random() < .2) {
                 console.log("money");
                 money += 40;

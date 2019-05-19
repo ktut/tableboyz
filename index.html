@@ -163,9 +163,19 @@
 
         <section id="end">
             <h1 style="margin-bottom: 30px;">Game<br>Over</h1>
-            <p style="text-align: center; margin-bottom: 15px;">Your score:</p> 
+            <p style="text-align: center;">Your score:</p> 
             <h2 class="endscore" style="text-align: center; font-size: 1.8rem;"></h2>
             <p class="endcomments" style="text-align: center; margin-top: 15px; padding-right: 10px; padding-left: 10px;"></p>
+
+            <!-- <div class="player-name">
+                <input type="text">
+                <button class="update">Update</button>
+            </div>
+
+            <div class="player-scores">
+                <div class="loading wobble">Loading...</div>
+            </div> -->
+
             <button class="play-again" style="margin: 40px auto; display: block;">
                 <h2>Play Again</h2>
             </button>
@@ -176,7 +186,27 @@
     </div>
     
     <footer>
-
+        
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#config-web-app -->
+    
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+        apiKey: "AIzaSyA5IiEAB8fk0olfYWZmlkYo82Unm9ZHe64",
+        authDomain: "table-boys.firebaseapp.com",
+        databaseURL: "https://table-boys.firebaseio.com",
+        projectId: "table-boys",
+        storageBucket: "table-boys.appspot.com",
+        messagingSenderId: "442157866900",
+        appId: "1:442157866900:web:eb02ccb61dc4a4e8"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
 
     </footer>
   </body>
