@@ -279,7 +279,6 @@ $(document).ready(function() {
                 // every second or so, make random table guests drink
                 if (alcohol % 4 === 0) {
                     let random = Math.ceil(Math.random()*$("#seat").children().length);
-                    console.log(random);
                     $("#seat").children().eq( random ).addClass("drinking");
                 }
 

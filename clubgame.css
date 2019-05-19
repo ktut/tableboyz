@@ -470,6 +470,7 @@ h2.char-select-header {
 }
 
 #points {
+    pointer-events: none;
     bottom: 20px;
     width: 100%;
     display: block;
