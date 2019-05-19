@@ -2,6 +2,19 @@ window.addEventListener( 'touchmove', function() {})
 
 $(document).ready(function() {
 
+    // Initialize Firebase
+    var firebaseConfig = {
+        apiKey: "AIzaSyA5IiEAB8fk0olfYWZmlkYo82Unm9ZHe64",
+        authDomain: "table-boys.firebaseapp.com",
+        databaseURL: "https://table-boys.firebaseio.com",
+        projectId: "table-boys",
+        storageBucket: "table-boys.appspot.com",
+        messagingSenderId: "442157866900",
+        appId: "1:442157866900:web:eb02ccb61dc4a4e8"
+    };
+    
+    firebase.initializeApp(firebaseConfig);
+
     let character = "";
 
     $(".char-select > div").on( "click", function() {
@@ -104,6 +117,7 @@ $(document).ready(function() {
                     $("#club").removeClass("active");
                     $("#info").hide();
                     $("#end").addClass("active");
+                    checkScore();
                     $(".endscore").text(score);
                     if (score < 500) {
                         $(".endcomments").text("next time, stay home");
@@ -386,6 +400,11 @@ $(document).ready(function() {
             console.log("money:" + money);
             console.log("alcohol level:" + alcohol);
         };
+
+        function checkScore() {
+            console.log("check score here");
+            // firebase.database().ref(“sharedHighScore”).set(score);
+        }
 
         // function resetGame() {
 
