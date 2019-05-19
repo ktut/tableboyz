@@ -301,9 +301,14 @@ h2.char-select-header {
     width: 190px;
     height: 30vh;
     z-index: 1;
+    border: 1px solid transparent;
     
     box-shadow: 0 18px 6px -6px black;
     border-radius: 10px;
+}
+
+.table.ui-droppable-hover {
+    border: 1px solid lime;
 }
 
 
@@ -420,7 +425,7 @@ h2.char-select-header {
 /* dragged people are brought up, and scale */
 .person.ui-draggable-dragging {
     z-index: 5 !important;
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 
 /* .person.pissed {
