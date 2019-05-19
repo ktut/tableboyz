@@ -94,7 +94,8 @@ a {
 
 #title,
 #club,
-#info {
+#info,
+#end {
     transition: height 1.8s ease-in, opacity 1.8s ease-in;
 }
 

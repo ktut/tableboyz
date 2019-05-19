@@ -10,11 +10,11 @@ $(document).ready(function() {
         $(".start-game").fadeIn();
         $(".char-select-header").hide();
         if ( $( this ).hasClass( "adam" ) ) {
-            character = "adam";
+            character = "Adam";
         } else if ( $( this ).hasClass( "mills" ) ) {
-            character = "mills";
-        } else {
-            character = "ryan";
+            character = "Mills";
+        } else if ( $( this ).hasClass( "ryan" ) ) {
+            character = "Ryan";
         }
     });
 
@@ -30,11 +30,6 @@ $(document).ready(function() {
     });
 
     function playGame() {
-       
-        // trying to get mobile address bar to hide, may not work
-        setTimeout(function(){
-            window.scrollTo(0, 1);
-        }, 200);
 
         // declare initial global variables
         let time = 0;
@@ -51,7 +46,7 @@ $(document).ready(function() {
         
         
         // character-specific things
-        if (character === "adam") {
+        if (character === "Adam") {
             $(".character .adam").show();
             $('#seat')
             .append($('<div class="person girl">'))
@@ -59,7 +54,7 @@ $(document).ready(function() {
             .append($('<div class="person girl">'))
             .append($('<div class="person girl">'))
             .append($('<div class="person girl">'));
-        } else if (character === "mills") { 
+        } else if (character === "Mills") { 
             $(".character .mills").show();
             $('#seat')
             .append($('<div class="person guy">'))
@@ -304,9 +299,6 @@ $(document).ready(function() {
 
 
 
-
-
-
         
         // people random movement logic
         function makeNewPosition(){
@@ -401,6 +393,5 @@ $(document).ready(function() {
         // };
         
     }
-
 
 });
