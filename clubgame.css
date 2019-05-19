@@ -420,14 +420,15 @@ h2.char-select-header {
 }
 
 /* non-selected people should dance */
-.room .person:not(.selected) {
-    animation: dance .8s infinite alternate ease-in-out;
+.room .person:not(.selected),
+.room .person:not(.ui-draggable-dragging) {
+    animation: dance 1s infinite alternate ease-in-out;
 }
 
 /* dragged people are brought up, and scale */
 .person.ui-draggable-dragging {
     z-index: 5 !important;
-    transform: scale(1.4);
+    transform: scale(1.25);
 }
 
 /* .person.pissed {

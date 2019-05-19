@@ -360,17 +360,17 @@ $(document).ready(function() {
             }
         });
 
-        // extract money from dudes
-        $("#seat .person.guy").on("click", function() {
-            console.log("guy clicked for money");
-            if (Math.random() < .2) {
-                console.log("money");
-                money += 40;
+        // extract money from guys
+        $("#seat").on( "click", function() {
+            console.log("seat clicked for money");
+            // if (Math.random() < .2) {
+            //     console.log("money");
+            //     money += 40;
 
-                $(".money").text(money);
-            } else {
-                $(this).addClass("pissed").delay(1500).removeClass("pissed");
-            }
+            //     $(".money").text(money);
+            // } else {
+            //     $(this).addClass("pissed").delay(1500).removeClass("pissed");
+            // }
         });
 
 
