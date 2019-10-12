@@ -28,6 +28,8 @@ $(document).ready(function() {
             character = "Mills";
         } else if ( $( this ).hasClass( "ryan" ) ) {
             character = "Ryan";
+        } else if ( $( this ).hasClass( "brandon" ) ) {
+            character = "Brandon";
         }
     });
 
@@ -76,8 +78,12 @@ $(document).ready(function() {
             .append($('<div class="person guy">'))
             .append($('<div class="person guy">'));
             money += 2000;
-        } else {
+        } else if (character === "Ryan") {
             $(".character .ryan").show();
+            money += 1000;
+        } else if (character === "Brandon") {
+            $(".character .brandon").show();
+            $(".pear").show();
             money += 1000;
         }
 

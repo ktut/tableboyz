@@ -325,7 +325,8 @@ h2.char-select-header {
 
 .character > .adam,
 .character > .ryan,
-.character > .mills  {
+.character > .mills,
+.character > .brandon  {
     display: none;
     position: relative !important;
     margin-top: -25px;
@@ -468,6 +469,12 @@ h2.char-select-header {
 
 #seat > .person {
     z-index: 1 !important;
+}
+
+#seat > .pear {
+    display: none;
+
+    width: 80px;
 }
 
 #points {
