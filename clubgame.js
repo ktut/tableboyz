@@ -380,6 +380,11 @@ $(document).ready(function() {
             }
         });
 
+        // pear
+        $(".pear").on( "click", function() {
+            money+=50;
+        });
+
         // extract money from guys
         $("#seat").on( "click", function() {
             console.log("seat clicked for money");

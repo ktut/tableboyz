@@ -473,8 +473,11 @@ h2.char-select-header {
 
 #seat > .pear {
     display: none;
-
     width: 80px;
+    z-index: 44;
+    position: absolute;
+    left: -30px;
+    user-select: all !important;
 }
 
 #points {
