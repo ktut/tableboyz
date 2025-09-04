@@ -2,19 +2,6 @@ window.addEventListener( 'touchmove', function() {})
 
 $(document).ready(function() {
 
-    // Initialize Firebase
-    var firebaseConfig = {
-        apiKey: "AIzaSyA5IiEAB8fk0olfYWZmlkYo82Unm9ZHe64",
-        authDomain: "table-boys.firebaseapp.com",
-        databaseURL: "https://table-boys.firebaseio.com",
-        projectId: "table-boys",
-        storageBucket: "table-boys.appspot.com",
-        messagingSenderId: "442157866900",
-        appId: "1:442157866900:web:eb02ccb61dc4a4e8"
-    };
-    
-    firebase.initializeApp(firebaseConfig);
-
     let character = "";
 
     $(".char-select > div").on( "click", function() {
@@ -24,8 +11,8 @@ $(document).ready(function() {
         $(".char-select-header").hide();
         if ( $( this ).hasClass( "adam" ) ) {
             character = "Adam";
-        } else if ( $( this ).hasClass( "mills" ) ) {
-            character = "Mills";
+        } else if ( $( this ).hasClass( "jag" ) ) {
+            character = "Jag";
         } else if ( $( this ).hasClass( "ryan" ) ) {
             character = "Ryan";
         } else if ( $( this ).hasClass( "brandon" ) ) {
@@ -69,15 +56,12 @@ $(document).ready(function() {
             .append($('<div class="person girl">'))
             .append($('<div class="person girl">'))
             .append($('<div class="person girl">'));
-        } else if (character === "Mills") { 
-            $(".character .mills").show();
-            $('#seat')
-            .append($('<div class="person guy">'))
-            .append($('<div class="person guy">'))
-            .append($('<div class="person guy">'))
-            .append($('<div class="person guy">'))
-            .append($('<div class="person guy">'));
-            money += 2000;
+        } else if (character === "Jag") { 
+            $(".character .jag").show();
+            $('.table')
+            .append($('<div class="person bruce">'))
+            money += 200;
+            bottleAppears()
         } else if (character === "Ryan") {
             $(".character .ryan").show();
             money += 1000;
@@ -367,18 +351,23 @@ $(document).ready(function() {
         });
 
 
+        function bottleAppears() {
+            $(".bottle").fadeIn(2000);
+            bottle = true;
+
+            alcohol+=200;
+        };
+        
         // buy bottles
         $(".buy-bottle").on( "click", function() {
             if (!bottle && money >= 500) {
-                $(".bottle").fadeIn(2000);
-                bottle = true;
-
                 money-=500;
-                alcohol+=200;
+                bottleAppears();
                 $(".money").text(money);
                 showStats();
             }
         });
+
 
         // pear
         $(".pear").on( "click", function() {

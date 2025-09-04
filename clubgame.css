@@ -32,6 +32,7 @@ h3 {
 
 p {
     font-size: 0.9rem;
+    letter-spacing: 0.3px;
 }
 
 button {
@@ -40,6 +41,12 @@ button {
     background: lime;
     padding: 6px 7px 4px;
     cursor: pointer;
+}
+
+button:disabled {
+    background: #555 !important;
+    cursor: not-allowed;
+    pointer-events: none;
 }
 
 a {
@@ -325,7 +332,7 @@ h2.char-select-header {
 
 .character > .adam,
 .character > .ryan,
-.character > .mills,
+.character > .jag,
 .character > .brandon  {
     display: none;
     position: relative !important;
@@ -450,6 +457,15 @@ h2.char-select-header {
 .person.guy {
     /* background: olive; */
     background-image: url(./assets/guy1.gif);
+}
+.person.bruce {
+    /* background: olive; */
+    background-image: url(./assets/bruce.gif);
+    pointer-events: none;
+    bottom: -1px;
+    right: 11px;
+    width: 100px;
+    height: 150px;
 }
 
 .person > img {
