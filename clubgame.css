@@ -466,6 +466,7 @@ h2.char-select-header {
     right: 11px;
     width: 100px;
     height: 150px;
+    z-index: 501 !important;
 }
 
 .person > img {
